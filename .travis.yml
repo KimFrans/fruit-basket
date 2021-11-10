@@ -6,6 +6,6 @@ node_js:
   - 12
 before_script:
   - psql -c 'create database "fruitbasket-test";' -U postgres
-  - psql -U postgres -d fruitbasket-test -a -f reg-database.sql
+  - psql -U postgres -d fruitbasket-test -a -f fruit-database.sql
 services:
   - postgresql;
