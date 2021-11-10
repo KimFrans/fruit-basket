@@ -44,7 +44,6 @@ describe('The fruit basket web app', function () {
     });
     it('should show the sum of the total of the fruit baskets for a given fruit type', async function () {
         await fruitTest.addingNewBasket("Grapes", 10, 5)
-        // await fruitTest.addingNewBasket("Grapes", 6, 8)
 
         assert.deepEqual([{total: 50.00}], await fruitTest.totalFruitBaskets('Grapes'));
 
